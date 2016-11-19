@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="utf8"/>
+    <title>SCSS Hello World</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>SCSS Hello World</h1>
+    <h3>安装</h3>
+    <ol id="install">
+        <li>
+            <p class="title">安装gulp和gulp-sass</p>
+            <p class="content">npm install gulp gulp-sass --save</p>
+        </li>
+        <li>
+            <p class="title">添加gulp配置任务</p>
+            <p class="contnet">
+                项目根目录新增gulpfile.js，内容如下：
+            </p>
+            <code>
+                   'use strict';
+
+                    var gulp = require('gulp');
+                    var sass = require('gulp-sass');
+
+                    gulp.task('sass', function () {
+                    gulp.src('./css/*.scss')
+                        .pipe(sass().on('error', sass.logError))
+                        .pipe(gulp.dest('./css/'));
+                    });
+
+                    gulp.task('sass:watch', function () {
+                    gulp.watch('./css/*.scss', ['sass'])
+                        .on('change', function (event) {
+                        console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+                        });;
+                    });
+            </code>
+        </li>
+        <li>
+            <p class="title">创建VS Code任务</p>
+            <p class="content">在VS Code中，Ctrl+Shift+B添加Gulp, 在生成的.vscode/tasks.json中:</p>
+            <code>
+                    {
+                        "version": "0.1.0",
+                        "command": "gulp",
+                        "isShellCommand": true,
+                        "args": ["--no-color"],
+                        "showOutput": "always",
+                        "tasks": [
+                            {
+                                "taskName": "sass:watch",
+                                "isBuildCommand": true
+                            }
+                        ]
+                    }
+                </code>
+        </li>
+        <li>
+            <p class="title">运行任务</p>
+            <p class="content">Ctrl+Shift+B</p>
+        </li>
+    </ol>
+    </div>
+</body>
+
+</html>
