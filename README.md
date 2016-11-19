@@ -69,7 +69,7 @@
 
     下载地址：[https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
 
-2. 安装Node Js
+2. 安装Node.js 6.0+
 
     下载地址：[http://nodejs.cn/download/](http://nodejs.cn/download/)
 
@@ -104,6 +104,6 @@
 ## 参考资料
 * JavaScript:[http://www.runoob.com/js/js-tutorial.html](http://www.runoob.com/js/js-tutorial.html)
 * SCSS: [http://www.sass-zh.com/](http://www.sass-zh.com/)
-* TypeScript: [http://www.tslang.cn/docs/tutorial.html][http://www.tslang.cn/docs/tutorial.html]
+* TypeScript: [http://www.tslang.cn/docs/tutorial.html](http://www.tslang.cn/docs/tutorial.html)
 * Ionic2: [http://ionicframework.com/docs/v2/](http://ionicframework.com/docs/v2/)
 * Angular2: [https://angular.cn/docs/ts/latest/quickstart.html](https://angular.cn/docs/ts/latest/quickstart.html)
