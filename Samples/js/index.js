@@ -1,8 +1,4 @@
-interface IMouse{
-    doAction():void;
-}
-
-var Cat=function(wathers: IMouse){
+var Cat=function(wathers){
     var self={};
     self.wathers=[wathers];
 
