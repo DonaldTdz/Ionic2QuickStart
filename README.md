@@ -73,19 +73,18 @@
 
     下载地址：[http://nodejs.cn/download/](http://nodejs.cn/download/)
 
-3. 安装nrm
+3. 安装cnpm
 
-    Windows 命名行: npm install -g nrm
+    Windows 命名行: npm install -g cnpm --registry=https://registry.npm.taobao.org
 
-    MAC Terminal: sudo npm install -g nrm
+    MAC Terminal: sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 4. 安装ionic-cli
 
-    Windows 命名行: npm install -g ionic cordova
+    Windows 命名行: cnpm install -g ionic cordova
     
-    MAC Terminal: sudo npm install -g ionic cordova
+    MAC Terminal: sudo cnpm install -g ionic cordova
 
-    > 如果网速慢，切换npm库到国内：nrm use cnpm
 
 5. 创建Hello World
 
