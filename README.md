@@ -92,6 +92,7 @@
     
     > ionic start HelloWorld --v2 
     <br> cd HelloWorld
+    <br> cnpm install
     <br> ionic serve
 
 6. 自学Git
