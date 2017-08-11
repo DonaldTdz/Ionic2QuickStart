@@ -90,7 +90,7 @@
 
     根据Ionic2官方文档，创建并运行Hello World. [http://ionicframework.com/docs/v2/getting-started/installation/](http://ionicframework.com/docs/v2/getting-started/installation/)
     
-    > ionic start HelloWorld --v2 
+    > ionic start HelloWorld
     <br> cd HelloWorld
     <br> cnpm install
     <br> ionic serve
